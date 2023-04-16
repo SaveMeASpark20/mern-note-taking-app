@@ -1,0 +1,35 @@
+.create-note{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+
+.create-note-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 5px;
+}
+
+.create-note-form > input, .create-note-form > textarea {
+    width: 50%;
+    min-width: 300px;
+    padding: 5px;
+    font-size: 2.4rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.create-note-form button{
+    padding: 5px;
+    color: #1FA50A;
+    background-color: #d9d9d9;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}

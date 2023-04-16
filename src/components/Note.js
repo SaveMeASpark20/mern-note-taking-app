@@ -1,4 +1,5 @@
-import notesStore from "../stores/notesStore"
+import notesStore from "../stores/notesStore";
+import "./Note.css";
 
 export default function Note( { note } ) {
     const store = notesStore(store => {
@@ -9,11 +10,15 @@ export default function Note( { note } ) {
     })
 
     return(
-    <div key={note._id}>
-        <h3>{note.title}</h3>
-        <h4>{note.body}</h4>
-        <button onClick={() => store.deleteNote(note._id)}> Delete Note </button>  {/* the button is in function es6 to not run instanly*/}
-        <button onClick={() => store.toggleUpdate(note)}> Update Note</button>
+    <div key={note._id} className="note-section">
+        <div className="note-row">
+            <h4>{note.title}: </h4>
+            <h3> {note.body}</h3>
+        </div>
+        <div className="note-buttons">
+            <button onClick={() => store.deleteNote(note._id)} className="delete-note-btn"> Delete Note </button>  {/* the button is in function es6 to not run instanly*/}
+            <button onClick={() => store.toggleUpdate(note)} className="update-note-btn" > Update Note</button>
+        </div>
     </div>
     )
 }

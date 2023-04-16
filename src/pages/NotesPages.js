@@ -5,9 +5,7 @@ import UpdateNote from '../components/UpdateNote';
 import notesStore from '../stores/notesStore';
 
 function NotesPages() {
-
   const store = notesStore();
-
   //UseEffect
   useEffect(() => {
     store.fetchNotes();

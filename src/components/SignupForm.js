@@ -18,7 +18,9 @@ export default function SignupForm() {
         <form onSubmit={ handleSignup }>
             <input onChange={store.updateSignupForm } value={ store.signupForm.email } type="email" name="email" />
             <input onChange={store.updateSignupForm } value={ store.signupForm.password } type="password" name="password" />
-            <button type="submit">Submit</button>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
         </form>
     </div>
   )

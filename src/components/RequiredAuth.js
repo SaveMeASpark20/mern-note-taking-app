@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import authStore from "../stores/authStore";
 
 export default function RequiredAuth(props) {
-    const store = authStore();
+  const store = authStore();
 
     useEffect(() => {
         if(store.loggedIn === null)
