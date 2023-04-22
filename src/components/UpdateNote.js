@@ -6,9 +6,9 @@ export default function UpdateNote() {
     if(!store.updateForm._id) return <></>;
 
     return(
-        <div>
+        <div className="update-note">
           <h2>Update Note: </h2>
-          <form onSubmit={store.updateNote}>
+          <form onSubmit={store.updateNote} className="update-note-form">
             <input 
               onChange={store.handleUpdateFieldChange}
               value={store.updateForm.title} 
