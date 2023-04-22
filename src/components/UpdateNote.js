@@ -1,4 +1,5 @@
-import notesStore from "../stores/notesStore"
+import notesStore from "../stores/notesStore";
+import "./UpdateNote.css";
 
 export default function UpdateNote() {
     const store = notesStore();
